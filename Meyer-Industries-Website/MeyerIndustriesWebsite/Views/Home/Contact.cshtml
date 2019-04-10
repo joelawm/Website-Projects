@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<html>
+
+<head>
+    <title> Contact </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-8"><p style="color:white;font-size:160%">Contact</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-10"><p style="color:#d2d2d2;">If you need anything feel free to use any of the provided emails down below, we promise to get back to you within 24 hours. If we fail to do so, you can receive a coupon for anything in the store.(excluding business and social emails)</p></div>
+    </div>
+    <div class="row center-block"><p> </p></div>
+    <div class="row center-block"><p> </p></div>
+    <div class="row center-block"><p> </p></div>
+    <div class="row center-block"><p> </p></div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><p style="color:white;font-size:120%">Buisness:</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><p style="color:#d2d2d2;font-size:100%">business@meyerindustries.com</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><p style="color:white;font-size:120%">Billing:</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><p style="color:#d2d2d2;font-size:100%">billing@meyerindustries.com</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><p style="color:white;font-size:120%">Social:</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><p style="color:#d2d2d2;font-size:100%">social@meyerindustries.com</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><p style="color:white;font-size:120%">Support:</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><p style="color:#d2d2d2;font-size:100%">Support@meyerindustries.com</p></div>
+    </div>
+
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbarFixed")
+
+</body>
+</html>

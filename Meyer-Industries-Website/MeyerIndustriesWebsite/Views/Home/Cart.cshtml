@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Cart";
+}
+<html>
+
+<head>
+    <title> Cart </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="row center-block" style="height:20px;"/>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-1"><p style="color:white;">Remove</p></div>
+        <div class="col-sm-1"><p style="color:white;">Product</p></div>
+        <div class="col-sm-8"><p></p></div>
+        <div class="col-sm-1"><p style="color:white;">Qty</p></div>
+        <div class="col-sm-1"><p style="color:white;">Total</p></div>
+        <hr class="col-sm-12" style="color:white;width:1186px;" />
+    </div>
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbarFixed")
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "NotLogin";
+}
+<html>
+
+<head>
+    <title> Job Opportunity </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-3 center-block"><p> </p></div>
+        <div class="col-sm-6 center-block"><p style="color:white;font-size:200%">You're not logged in! Please log in to countinue!</p></div>
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbarFixed")
+
+</body>
+</html>

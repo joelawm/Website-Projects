@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "ProductsElectrical";
+}
+<html>
+
+<head>
+    <title> Electical Systems </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1200px;height:190px">
+        <div style="height:190px;width:200px;border:1px;border-style:solid;border-color:#3a3a3a;" class="col-sm-2"><a href="/Products/SingleUSMP"><p style="color:white;font-size:160%;">Coming Soon!</p></a></div>
+        <div style="height:190px;width:200px;border:1px;border-style:solid;border-color:#3a3a3a;" class="col-sm-2"><a href="/Products/DoubleUSMP"><p style="color:white;font-size:160%;">Coming Soon!</p></a></div>
+        <!--<div style="height:190px;width:200px;border:1px;border-style:solid;border-color:#3a3a3a;" class="col-sm-2"><a href="#"></a></div>
+        <div style="height:190px;width:200px;border:1px;border-style:solid;border-color:#3a3a3a;" class="col-sm-2"><a href="#"></a></div>-->
+    </div>
+    <div class="row center-block" style="width:1200px;">
+        <div class="col-sm-2"><a href="/Products/UnassembledMILTM" style="color:white;"><p style="color:white;text-align:center;font-size:90%">Unassembled Mosfet MI LTM</p></a></div>
+        <div class="col-sm-2"><a href="/Products/AssembledMILTM" style="color:white;"><p style="color:white;text-align:center;font-size:90%">Assembled Mosfet MI LTM</p></a></div>
+        <!--<div class="col-sm-2"><a href="#" style="color:white;"><p style=" color:white;text-align:center;"></p></a></div>
+        <div class="col-sm-2"><a href="#" style="color:white;"><p style=" color:white;text-align:center;"></p></a></div>-->
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbarFixed")
+
+</body>
+</html>

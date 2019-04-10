@@ -1,0 +1,121 @@
+﻿
+@model MeyerIndustriesWebsite.Models.Register
+@{
+    ViewBag.Title = "Register";
+}
+<html>
+
+<head>
+    <title> Register </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    @using (Html.BeginForm()) { }
+
+    <div class="center-block" style="height:75px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">Email:</p></div>
+        @Html.TextBox("Email",Model.Email, htmlAttributes: new { @class = "col-sm-3 center-block input-lg" })
+        <!--<div class="col-sm-3 center-block"><input class="form-control input-lg" id="LoginInput" type="text"></div>-->
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">Email Confirm:</p></div>
+        @Html.TextBox("Emailconfirm", Model.EmailConfirm, htmlAttributes: new { @class = "col-sm-3 center-block input-lg" })
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;height:20px;">
+        <div class="col-sm-12 center-block"><p> </p></div>
+    </div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">Password:</p></div>
+        @Html.TextBox("Password", Model.Password, htmlAttributes: new { @class = "col-sm-3 center-block input-lg", @type="password"})
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">Password Confirm:</p></div>
+        @Html.TextBox("Passwordconfirm", Model.PasswordConfirm, htmlAttributes: new { @class = "col-sm-3 center-block input-lg", @type = "password"})
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">Address:</p></div>
+        @Html.TextBox("Address", Model.Address, htmlAttributes: new { @class = "col-sm-3 center-block input-lg" })
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">Appartment Number:</p></div>
+        @Html.TextBox("Address2", Model.Address2, htmlAttributes: new { @class = "col-sm-3 center-block input-lg" })
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">Country:</p></div>
+        <div class="form-group">
+            <div class="col-sm-3">
+                @Html.DropDownList("Country",(SelectList) ViewBag.DropDownValueCountries, "Select Country", new { @class = "form-control input-lg" })
+            </div>
+        </div>
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">State:</p></div>
+        <div class="form-group">
+            <div class="col-sm-3">
+                @Html.DropDownList("State",(SelectList) ViewBag.DropDownValueStates, "Select State", new { @class = "form-control input-lg" })
+            </div>
+        </div>
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">City:</p></div>
+        @Html.TextBox("City", Model.City, htmlAttributes: new { @class = "col-sm-3 center-block input-lg" })
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:160%">Zip Code:</p></div>
+        @Html.TextBox("Zipcode", Model.ZipCode, htmlAttributes: new { @class = "col-sm-3 center-block input-lg" })
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-5 center-block"><p> </p></div>
+        <label class="center-block" style="color:white;">Agree to the Terms and Conditions: <input type="checkbox" value=""></label>
+        <div class="col-sm-5 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-5 center-block"><p> </p></div>
+        <button type="submit" class="col-sm-2 center-block btn btn-secondary">Sign Up</button>
+        <div class="col-sm-5 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    }
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbar")
+</body>
+</html>

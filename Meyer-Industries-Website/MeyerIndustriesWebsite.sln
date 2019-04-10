@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeyerIndustriesWebsite", "MeyerIndustriesWebsite\MeyerIndustriesWebsite.csproj", "{572F1654-C915-46C4-A9A3-F6A2B2E35218}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MIDB", "..\..\Database Program\Meyer Industries Datbase App\MIDB\MIDB.sqlproj", "{E6597E8C-480C-45E0-A661-CB3BF0AB4DF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{572F1654-C915-46C4-A9A3-F6A2B2E35218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572F1654-C915-46C4-A9A3-F6A2B2E35218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572F1654-C915-46C4-A9A3-F6A2B2E35218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572F1654-C915-46C4-A9A3-F6A2B2E35218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6597E8C-480C-45E0-A661-CB3BF0AB4DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6597E8C-480C-45E0-A661-CB3BF0AB4DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6597E8C-480C-45E0-A661-CB3BF0AB4DF3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E6597E8C-480C-45E0-A661-CB3BF0AB4DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6597E8C-480C-45E0-A661-CB3BF0AB4DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6597E8C-480C-45E0-A661-CB3BF0AB4DF3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

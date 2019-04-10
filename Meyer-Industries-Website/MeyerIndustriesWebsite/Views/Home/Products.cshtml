@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Products";
+}
+<html>
+
+<head>
+    <title> Products </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="row center-block" style="width:1200px;height:190px">
+        <div style="height:190px;width:200px;border:1px;border-style:solid;border-color:#3a3a3a;" class="col-sm-2"><a href="/Home/ProductsClothing"><img height="190" width="200" src="~/Images/Vectors Products/TShirt.png"/></a></div>
+        <div style="height:190px;width:200px;border:1px;border-style:solid;border-color:#3a3a3a;" class="col-sm-2"><a href="/Home/ProductsCameraGear"><img height="190" width="200" src="~/Images/Vectors Products/Camera.png"/></a></div>
+        <div style="height:190px;width:200px;border:1px;border-style:solid;border-color:#3a3a3a;" class="col-sm-2"><a href="/Home/ProductsPouches"><img height="190" width="200" src="~/Images/Vectors Products/Mag Pouch.png" /></a></div>
+        <div style="height:190px;width:200px;border:1px;border-style:solid;border-color:#3a3a3a;" class="col-sm-2"><a href="/Home/ProductsWeapons"><img height="190" width="200" src="~/Images/Vectors Products/Gun.png" /></a></div>
+        <div style="height:190px;width:200px;border:1px;border-style:solid;border-color:#3a3a3a;" class="col-sm-2"><a href="/Home/ProductsElectrical"><img height="190" width="200" src="~/Images/Vectors Products/Electrical.png" /></a></div>
+    </div>
+    <div class="row center-block" style="width:1200px;">
+        <div class="col-sm-2"><a href="/Home/ProductsClothing" style="color:white;"><p style="color:white;text-align:center;">Clothing</p></a></div>
+        <div class="col-sm-2"><a href="/Home/ProductsCameraGear" style="color:white;"><p style=" color:white;text-align:center;">Camera Gear</p></a></div>
+        <div class="col-sm-2"><a href="/Home/ProductsPouches" style="color:white;"><p style=" color:white;text-align:center;">Pouches</p></a></div>
+        <div class="col-sm-2"><a href="/Home/ProductsWeapons" style="color:white;"><p style=" color:white;text-align:center;">Weapon Systems</p></a></div>
+        <div class="col-sm-2"><a href="/Home/ProductsElectrical" style="color:white;"><p style=" color:white;text-align:center;">Electrical Systems</p></a></div>
+    </div>
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbarFixed")
+
+</body>
+</html>

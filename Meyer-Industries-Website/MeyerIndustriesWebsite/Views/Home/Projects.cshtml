@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Projects";
+}
+<html>
+
+<head>
+    <title> Projects </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-12"><p style="color:white;font-size:160%;">The Vault</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-2"><img height="150" width="150" src="~/Images/Project Images/The Vault.png" /></div>
+        <div class="col-sm-8"><p style="color:#d2d2d2; font-size:160%">The vault is a server that is attempting to house all the information in the world in one place. It can be accessed via an api that the world can use in their own applications for learning and betterment of human existence.</p></div>
+    </div>
+    <div class="row center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-12"><p style="color:white;font-size:160%;">Autopilot</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-2"><img height="150" width="150" src="~/Images/Project Images/Project Autopilot.png" /></div>
+        <div class="col-sm-8"><p style="color:#d2d2d2; font-size:160%;">This project brings high level Artificial Intelligence to aircraft pilots.</p></div>
+    </div>
+    <div class="row center-block" style="height:20px;"><p> </p></div>
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbarFixed")
+
+</body>
+</html>

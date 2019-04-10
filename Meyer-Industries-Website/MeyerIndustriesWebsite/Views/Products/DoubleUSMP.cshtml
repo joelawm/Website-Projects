@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Double USMP";
+}
+<html>
+
+<head>
+    <title> Double Ultra Speed Mag Pouch </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="w3-content center-block row" style="max-width:1200px">
+        <img class="mySlides col-sm-12" src="~/Images/Slides/slides 1.png" style="width:1186px;height:500px;">
+        <img class="mySlides col-sm-12" src="~/Images/Slides/slides 2.png" style="width:1186px;height:500px;">
+        <img class="mySlides col-sm-12" src="~/Images/Slides/slides.png" style="width:1186px;height:500px;">
+    </div>
+    <div class="center-block" style="height:5px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-2">
+            <img class="" src="~/Images/Slides/slides 1.png" style="width:200px;height:100px;border:1px;border-style:solid;border-color:#3a3a3a;" onclick="currentDiv(1)">
+        </div>
+        <div class="col-sm-2">
+            <img class="" src="~/Images/Slides/slides 2.png" style="width:200px;height:100px;border:1px;border-style:solid;border-color:#3a3a3a;" onclick="currentDiv(2)">
+        </div>
+        <div class="col-sm-2">
+            <img class="" src="~/Images/Slides/slides.png" style="width:200px;height:100px;border:1px;border-style:solid;border-color:#3a3a3a;" onclick="currentDiv(3)">
+        </div>
+    </div>
+    <div class="center-block" style="height:5px;"><p> </p></div>
+    <!--review, wishlist, add to cart-->
+    <div id="addtocart" class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><a href="/Home/ReviewWriter" class="btn btn-info" role="button">Write a Review</a>&nbsp;<a href="/Home/Wishlist" role="button" class="btn btn-primary">Add to Wishlist</a>&nbsp;<a href="/Home/Cart" class="btn btn-success" role="button">Add to Cart</a></div>
+        <div class="col-sm-8"></div>
+    </div>
+    <div class="center-block" style="height:5px;"><p> </p></div>
+    <div id="addtocart" class="row center-block" style="width:1186px;">
+        <div class="col-sm-1"><p style="color:white;">Reveiws:</p></div>
+        <div class="rating col-sm-1">
+            <span style="color:white;">☆</span><span style="color:white;">☆</span><span style="color:white;">☆</span><span style="color:white;">☆</span><span style="color:white;">☆</span>
+        </div>
+        <div class="col-sm-1"><p style="color:white;">Model Number:</p></div>
+        <div class="col-sm-1"><p style="color:white;">000000002</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-12"><p style="color:white;font-size:160%;">Description:</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-12"><p style="color:#d2d2d2;font-size:120%;">Descitption goes here!</p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-12"><p style="color:white;font-size:160%;">Specification:</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-12"><p style="color:#d2d2d2;font-size:120%;">-Spec go here</p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-12"><p style="color:white;font-size:160%;">Warranty:</p></div>
+        <div class="col-sm-12"><p style="color:white;font-size:120%;">This product has lifetime warranty.</p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbar")
+
+</body>
+</html>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-border-red", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-border-red";
+    }
+</script>
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>

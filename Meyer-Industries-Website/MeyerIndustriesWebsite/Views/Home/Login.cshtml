@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+<html>
+
+<head>
+    <title> Login </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="row center-block" style="width:1186px;height:75px;">
+        <div class="col-sm-12 center-block"><p> </p></div>
+    </div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:220%">Email:</p></div>
+        <div class="col-sm-3 center-block"><input class="form-control input-lg" id="LoginInput" type="text"></div>
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;height:20px;">
+        <div class="col-sm-12 center-block"><p> </p></div>
+    </div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-4 center-block"><p> </p></div>
+        <div class="col-sm-2 center-block"><p style="color:white;font-size:220%">Password:</p></div>
+        <div class="col-sm-3 center-block"><input type="password" class="form-control input-lg " id="PasswordInput"></div>
+        <div class="col-sm-3 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px">
+        <div class="col-sm-5 center-block"><p> </p></div>
+        <button type="button" class=" col-sm-2 center-block btn btn-secondary">Sign In</button>
+        <div class="col-sm-5 center-block"><p> </p></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbarFixed")
+
+</body>
+</html>

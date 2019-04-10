@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<html>
+
+<head>
+    <title> About </title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><b style="color:white;font-size:180%;">Our Team</b></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-4"><b style="color:white;font-size:160%;">The History of Meyer Industries</b></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-12"><p class="center-block" style="color:#d2d2d2;font-size:120%">Meyer Industries started out as a company for a kid to stretch his dream of creating technology to be merged with our military to bring our troops an easier mission and home faster. Meyer Industries is on the forefront of bringing new technology to the military world and into our homes.</p></div>
+    </div> 
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-12"><b class="center-block" style="color:white;font-size:120%;">Roster</b></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-12"><i class="center-block" style="color:white;font-size:190%;">Joseph Meyer | CEO and Founder</i></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-10"><p class="center-block" style="color:#d2d2d2; font-size:160%;">Joe Meyer started at the age of 7 creating his first ever computer program and at the age of 9 his first ever computer and server. Currently, he is going to Northern Illinois University for a triple major in Physics, Electrical Engineering and Computer Science. His Dream is to make amazing technology for the world, and leave an everlasting imprint on the world.</p></div>
+        <div class="col-sm-1"><img height="220" width="160" src="~/Images/Employee Pictures/Joe Meyer Profile Pciture (edited).png" /></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-12"><i class="center-block" style="color:white;font-size:190%;">Justin Dixon | Weapons Testing Manager</i></div>
+    </div>
+    <div class="row center-block" style="width:1186px;">
+        <div class="col-sm-10"><p class="center-block" style="color:#d2d2d2; font-size:160%;">Justin Dixon started out with his wanting to serve in the military at a very young age. Eventually at the age of 18,  he joined the Armed Forces to defend his country. He joined Meyer Industries as a weapon and gear testing because of his knowledge of the Armed Forces.</p></div>
+        <div class="col-sm-1"><img height="220" width="160" src="~/Images/Employee Pictures/Justin Dixon Profile Picture (edited).png" /></div>
+    </div>
+    <div class="center-block" style="height:20px;"><p> </p></div>
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbar")
+
+</body>
+</html>

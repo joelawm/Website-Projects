@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Navbar";
+}
+<html>
+<head>
+    <title></title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <!--Top navbar Underlying image-->
+    <div id="Top Bar" style="width:5120px; height:75px; background-color:#1d1d1d" class="img-responsive" />
+
+    <!--Buttons for underlying website navbar-->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="/Home"><img id="Logo" src="~/Images/Logo/Top Bar Logo.png"/></a>
+                <a href="/Home"><img id="Home" src="~/Images/Buttons/Home Button.png"/></a>
+                <a href="/Home/About"><img height="75" src="~/Images/Buttons/About Button.png"/></a>
+                <a href="/Home/Products"><img height="75" src="~/Images/Buttons/Products Button.png"/></a>
+                <a href="/Home/Projects"><img height="75" src="~/Images/Buttons/Projects Button.png"/></a>
+                <a href="/Home/Contact"><img height="75" src="~/Images/Buttons/Contacts Button.png"/></a>
+                <a href="/Home/Login"><img height="75" src="~/Images/Buttons/Login.png"/></a>
+                <img src="~/Images/Buttons/Seperation Bar for Login.png"/>
+                <a href="/Home/Register"><img height="75" src="~/Images/Buttons/Register.png"/></a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
+<style>
+    .navbar-header {
+        float: left;
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+    }
+</style>

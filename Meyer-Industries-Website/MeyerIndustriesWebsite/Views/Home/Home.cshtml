@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<html>
+
+<head>
+    <title> Home </title>
+    <link rel="icon" href="http://www.meyerindustries.com/favicon.ico">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:#000000">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script> 
+    <!--Navbar-->
+    @Html.Partial("Navbar")
+    <!--Body-->
+    <div class="row center-block" style="width:1186px;height:500px;">
+        <div class="col-sm-3"><p></p></div>
+        <div class=" col-sm-6 center-block w3-content w3-display-container" style="width:1186px">
+            <img class="mySlides" src="~/Images/Slides/slides 1.png" style="width:1186px;height:500px;">
+            <img class="mySlides" src="~/Images/Slides/slides 2.png" style="width:1186px;height:500px;">
+            <img class="mySlides" src="~/Images/Slides/slides.png" style="width:1186px;height:500px;">
+        </div>
+        <div class="col-sm-3"><p></p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;height:100px;">
+        <div class="col-sm-12"><p style="color:white; text-align:center;font-size:160%;height:20px;">Featured Products</p></div>
+    </div>
+    <div class="row center-block" style="width:1186px;height:20px;">
+        <div class="col-sm-12"><p style="color:white; text-align:center;font-size:160%;">News</p></div>
+    </div>
+    <div class="row center-block" id="Feed Facebook" style="width:500px;">
+        <div class="col-sm-2"><p> </p></div>
+        <iframe class="col-sm-8 center-block" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FMeyerWeaponIndustries&amp;width=490&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=435" scrolling="yes" frameborder="0" style="border-color:black;border-width:thin;overflow:hidden;width:500px;height:350px;background:black;align-content:center;" allowtransparency="true">
+        </iframe>
+        <div class="col-sm-2"><p> </p></div>
+    </div>
+    <!--Lower Navbar-->
+    @Html.Partial("LowerNavbar")
+
+</body>
+</html>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000); // Change image every 5 seconds
+    }
+</script>
+<style>
+    .mySlides {
+        display: none;
+    }
+
+    .w3-left, .w3-right, .w3-badge {
+        cursor: pointer;
+    }
+
+    .w3-badge {
+        height: 13px;
+        width: 13px;
+        padding: 0;
+    }
+</style>
